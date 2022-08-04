@@ -17,7 +17,7 @@ theme:
 # Extensions
 markdown_extensions:
   - admonition
-  - pymdownx.details
+  # - pymdownx.details
 
 # Navigation
 nav:
