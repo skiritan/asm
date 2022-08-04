@@ -19,9 +19,11 @@
 ![Architecture](./images/diagram-basic-arch.png "Workload Architecture")
 
 ## プレゼンテーションデッキ
+
 [ワークショップのプレゼンテーションデッキ](./threat-detect-workshop-presentation.pdf)
 
 ## リージョン
+
 このワークショップには、us-west-2 (Oregon) リージョンを使用してください。
 
 ## モジュール
