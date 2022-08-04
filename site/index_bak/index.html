@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>概要 - Mandiant ASM ハンズオンセミナー</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u6982\u8981";
+        var mkdocs_page_input_path = "index_bak.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Mandiant ASM ハンズオンセミナー
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">概要</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../01-environment-access.md">1: ASMへアクセス</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../02-configuration-check.md">2: 設定の確認</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../03-asm-walkthrough.md">3: 探索結果の確認</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../04-operatoin-tips.md">4: 運用のTIPS</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../05-summary.md">5: まとめ</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Mandiant ASM ハンズオンセミナー</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>概要</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">概要</h1>
+<p>このワークショップは、AWS セキュリティサービスを理解し、そのサービスを使用して貴社環境の脅威を識別および修復する方法を学習する手助けとなるように設計されています。Amazon GuardDuty、Amazon Macie、Amazon Inspector、AWS Security Hub などのサービスを使用します。これらのサービスを使用して、攻撃中および攻撃後の脅威を調査し、通知と修復パイプラインを設定し、追加的な保護策を講じて、貴社環境のセキュリティを改善する方法を学習します。</p>
+<ul>
+<li><strong>レベル</strong>: 中級</li>
+<li><strong>時間</strong>: 2 ～ 3 時間</li>
+<li><strong><a href="https://www.nist.gov/cyberframework/online-learning/components-framework" target="_blank">CSF 機能</a></strong>: 検出、対応、復旧</li>
+<li><strong><a href="https://d0.awsstatic.com/whitepapers/AWS_CAF_Security_Perspective.pdf" target="_blank">CAF 構成要素</a></strong>: Detective, Responsive</li>
+<li><strong><a href="https://awssecworkshops.com/getting-started/" target="_blank">前提条件</a href></strong>: AWS アカウント、管理者権限を持つ IAM ユーザー</li>
+</ul>
+<h2 id="_2">シナリオ</h2>
+<p>あなたの会社はクラウドに慣れておらず、最近インフラストラクチャーを試験的にリフトアンドシフトで移行しました。あなたはシステム管理者であり、AWS 環境のセキュリティ監視を任されています。その作業の一環として、その環境におけるセキュリティイベントへの対応も担当しています。</p>
+<h2 id="_3">アーキテクチャ</h2>
+<p>このワークショップ用に、us-west-2 リージョンで単一のインスタンスが設定されています。これは試験的な「リフトアンドシフト」移行であり、アプリケーションは冗長化していません。そのため、単一の公開ウェブサーバーとなっています。このウェブサーバーは、Elastic Network Interface を通じてインターネットゲートウェイにアクセスできます。顧客は、Elastic Network Interface を指す DNS エントリを通じてウェブサーバーにアクセスします。静的コンテンツを S3 バケットに保管し、ウェブサーバーからのアクセスに VPC S3 エンドポイントゲートウェイを使用します。</p>
+<p><img alt="Architecture" src="./images/diagram-basic-arch.png" title="Workload Architecture" /></p>
+<h2 id="_4">プレゼンテーションデッキ</h2>
+<p><a href="./threat-detect-workshop-presentation.pdf">ワークショップのプレゼンテーションデッキ</a></p>
+<h2 id="_5">リージョン</h2>
+<p>このワークショップには、us-west-2 (Oregon) リージョンを使用してください。</p>
+<h2 id="_6">モジュール</h2>
+<ol>
+<li><a href="./01-environment-setup.md">環境構築と設定</a></li>
+<li><a href="./02-attack-simulation.md">攻撃シミュレーション</a> </li>
+<li><a href="./03-detection-and-remediation.md">検知と対応</a> </li>
+<li><a href="./04-review-and-discussion.md">レビューとディスカッション</a></li>
+</ol>
+<p>合計時間: ± 2 時間</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
