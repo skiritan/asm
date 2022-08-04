@@ -1,4 +1,4 @@
-# Mandiant: Attack Surface Management ハンズオン
+# Attack Surface Management ハンズオン
 
 Mandiant Attack Surface Management (ASM) ハンズオンにようこそ！ 
 
@@ -14,7 +14,7 @@ Mandiant Attack Surface Management (ASM) ハンズオンにようこそ！
 
 - **ステップ３ - アタックサーフェースの確認** : ASMの探索結果を確認し、アタックサーフェイスの情報、可視化されたリスクを把握します
 
-- **ステップ４ - 運用のTIPS** ：運用を支援する機能を確認します
+- **ステップ４ - 運用TIPS** ：運用を支援する機能を確認します
 
 - **ステップ５- まとめ** 
 

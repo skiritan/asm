@@ -1,9 +1,9 @@
 
 # Project information
 
-site_name: Mandiant ASM ハンズオンセミナー
+site_name: ASM ハンズオンセミナー
 site_short_name: ASM ハンズオンセミナー
-site_description: 'このハンズオンセミナーは、Mandiant ASM を利用して、組織のアタックサーフェース（攻撃対象領域）の可視化とそのリスク管理の方法を体験いただきます'
+site_description: 'このハンズオンセミナーは Mandiant Attack Surface Management を利用して、組織のアタックサーフェース（攻撃対象領域）の可視化とそのリスク管理の方法を体験します'
 # site_author: ''
 # site_url: ''
 # copyright: ''
@@ -13,9 +13,16 @@ site_description: 'このハンズオンセミナーは、Mandiant ASM を利用
 theme: 
   # name: readthedocs
   name: material
+  language: ja
+  font: 
+    text: Noto Sans JP
+    code: JetBrains Mono
 
-  favicon: ico/ki.png
-  
+  # feature:
+  #   tabs: true
+  # favicon: ico/ki.png
+
+
 # Extensions
 markdown_extensions:
   - admonition
@@ -24,16 +31,20 @@ markdown_extensions:
 # Navigation
 nav:
   - 概要: 'index.md'
-  - '1. ASMへアクセス': '01-environment-access.md'
+  - '1. ASMへのアクセス': '01-environment-access.md'
   - '2. 設定の確認': '02-configuration-check.md'
-  - '3. 探索結果の確認': '03-asm-walkthrough.md'
-      - '3.1. DashBoardの確認': '01-environment-access.md'
-      - '3.2. Entitiesの確認': '01-environment-access.md'
+  - '3. 探索結果の確認': 
+    - '3.1. DashBoardの確認': '031-check-dashboard.md'
+    - '3.2. Entitiesの確認': '032-check-entities.md'
+    - '3.3. Technologiesの確認': '033-check-technologies.md'
+    - '3.4. Issuesの確認': '034-check-issues.md'
+    - '3.5. Insightsの確認': '035-check-insights.md'
 
-  - '4. 運用のTIPS': '04-operatoin-tips.md'
+  - '4. 運用のTIPS': 
+    - '4.1. Tag機能': '041-tips-tag.md'
+    - '4.2. Export機能': '041-tips-export.md'
+    - '4.3. Integration機能': '041-tips-integration.md'
+  
   - '5. まとめ': '05-summary.md'
-
-          - 'Writing your docs': 'writing-your-docs.md'
-        - 'Styling your docs': 'styling-your-docs.md'
 
 
