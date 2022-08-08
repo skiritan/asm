@@ -15,7 +15,7 @@
     
     
       
-        <title>3.1. DashBoardの確認 - ASM ハンズオンセミナー</title>
+        <title>3.3. Technologiesの確認 - ASM ハンズオンセミナー</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3.1. DashBoardの確認
+              3.3. Technologiesの確認
             
           </span>
         </div>
@@ -252,52 +252,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          3.1. DashBoardの確認
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../031-check-dashboard/" class="md-nav__link">
         3.1. DashBoardの確認
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dashboard" class="md-nav__link">
-    DashBoard の確認
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -321,11 +280,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../033-check-technologies/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          3.3. Technologiesの確認
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         3.3. Technologiesの確認
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technologies" class="md-nav__link">
+    Technologies の確認
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -483,8 +483,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dashboard" class="md-nav__link">
-    DashBoard の確認
+  <a href="#technologies" class="md-nav__link">
+    Technologies の確認
   </a>
   
 </li>
@@ -504,16 +504,41 @@
 
 
 <h1 id="3">3. 探索結果の確認</h1>
-<p>このステップでは、ASMが行った探索の結果を確認します。</p>
-<h2 id="dashboard">DashBoard の確認</h2>
-<p>まずDashBoardで結果の概要を確認していきます。</p>
-<p>ここでは、探索で発見したアタックサーフェースの数や、時系列の変化や地理的な分布、最新の探索で発見した情報などが表示されます。</p>
-<p>１．画面上部の<code>Dashboad</code> タブをクリックすると、下記画面が表示されます</p>
-<p>２．探索によって発見した Issue、Entity、Technologyの数を確認します。</p>
+<h2 id="technologies">Technologies の確認</h2>
+<p>続いて、ASMが発見したTechnologies (=Entitiesで利用されているアプリケーションやサービス）を確認します。</p>
+<p>１．画面上部の<code>Technologies</code> タブをクリックすると、下記画面が表示されます。</p>
+<p>２．左ペインのFiltersを選択することで、表示するTechnologies をフィルタすることができます。<strong>DNSRecordを</strong>を選択して、</p>
+<p>３．左ペインのFiltersを、DNSRecordの選択を解除し、URIを選択します。</p>
+<p>４．URI の１つをクリックして、詳細を確認します。</p>
+<p>スクリーンショットや</p>
+<p>５．ASMはそのほかにも、攻撃者の興味をひきやすいリソースについても探索を行います。AWS S3バケットや GitHubの</p>
+<p>もしあれば、</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>ASMは、Seedで入力した情報をもとに探索を行っています。
+ここでは、ドメイン情報からDNSレコードの調査や、Webサイトの探索といった単純なものに加え、OSINTベースによる探索や、機械学習を用いた情報の紐づけなど、様々なロジックを用いて探索をおこなっています。。</p>
+<p>６．画面右上のクエリウィンドウから、より詳細の検索を行うことができます</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>画面上部の Active Entities/ InActive Entities を変更することで、過去に発見したEntities を確認できます。InActive Entieysは「以前の探索で発見されたが、最新の探索では発見されなかった」ものとして</p>
+<p>７．最後に、Domain をみます。</p>
+<p>→</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>タイポ・スクワッティング(Typo-Squatting)攻撃の可能性があるドメインが表示されます。URLの打ち間違えを狙ったドメインとして</p>
+<p><em>Typo</em>-Squatting（タイポ・スクワッティング）</p>
+<p>タイポすくわってぃんぐの 
+画面上部の Active Entities/ InActive Entities を変更することで、過去に発見したEntities を確認できます。InActive Entieysは「以前の探索で発見されたが、最新の探索では発見さ</p>
+<p><img alt="" src="../images/2022-08-08-13-54-07-image.png" /></p>
+<p>AWS のS3バケットや、Github関連のEntitiesなど、</p>
+<p>タスクの完了は、Status が Finished になっていることで確認できます。その他にも、開始時間や探索時間、探索試行数などが確認できます</p>
+<p>探索によって発見した Issue、Entity、Technologyの数を確認します。</p>
 <p>３．Hosts by Country で、どの国でEntitiesが発見されているか、国ごとのHosts数を確認します。</p>
 <p>４．New Technologiesで、</p>
-<p>５．Recent Issues でどのようなリスクが発見されているかを確認します。</p>
-<p>６．以上で、アタックサーフェースの状況をダッシュボードで確認しました。次のステップからEntites、Technologies、Issueについて個別に確認していきます。</p>
+<p>８．次のステップで、Technologies について確認していきます。</p>
 
               
             </article>
@@ -529,7 +554,7 @@
     <nav class="md-footer__inner md-grid" aria-label="フッター" >
       
         
-        <a href="../02-configuration-check/" class="md-footer__link md-footer__link--prev" aria-label="前: 2. 設定の確認" rel="prev">
+        <a href="../032-check-entities/" class="md-footer__link md-footer__link--prev" aria-label="前: 3.2. Entitiesの確認" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -538,20 +563,20 @@
               <span class="md-footer__direction">
                 前
               </span>
-              2. 設定の確認
+              3.2. Entitiesの確認
             </div>
           </div>
         </a>
       
       
         
-        <a href="../032-check-entities/" class="md-footer__link md-footer__link--next" aria-label="次: 3.2. Entitiesの確認" rel="next">
+        <a href="../034-check-issues/" class="md-footer__link md-footer__link--next" aria-label="次: 3.4. Issuesの確認" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 次
               </span>
-              3.2. Entitiesの確認
+              3.4. Issuesの確認
             </div>
           </div>
           <div class="md-footer__button md-icon">
