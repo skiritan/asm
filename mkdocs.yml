@@ -42,8 +42,8 @@ nav:
 
   - '4. 運用のTIPS': 
     - '4.1. Tag機能': '041-tips-tag.md'
-    - '4.2. Export機能': '041-tips-export.md'
-    - '4.3. Integration機能': '041-tips-integration.md'
+    - '4.2. Export機能': '042-tips-export.md'
+    - '4.3. Integration機能': '043-tips-integration.md'
   
   - '5. まとめ': '05-summary.md'
 
