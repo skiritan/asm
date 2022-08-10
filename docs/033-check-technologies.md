@@ -4,8 +4,6 @@
 
 続いて、ASMが発見したTechnologies (=Entitiesで利用されているアプリケーションやサービス）を確認します。
 
-
-
 １．画面上部の`Technologies` タブをクリックすると、下記画面が表示されます。
 
 ２．左ペインのFiltersを選択することで、表示するTechnologies をフィルタすることができます。**DNSRecordを**を選択して、

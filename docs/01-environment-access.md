@@ -2,6 +2,8 @@
 
 ## Mandiant Advantage ポータルへの接続
 
+---
+
 １．ブラウザで  [https://advantage.mandiant.com/](https://advantage.mandiant.com/) にアクセスします
 
 ![](images/2022-08-04-15-18-26-image.png)
@@ -16,6 +18,8 @@
 ![](images/2022-08-04-15-29-27-image.png)
 
 ## Attack Surface Management への移動
+
+----
 
 ４．画面左上のスイッチャーをクリックし、`Attack Surface Management` をクリックします
 ![](images/2022-08-04-15-51-13-image.png)
