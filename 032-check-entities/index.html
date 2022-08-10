@@ -507,38 +507,46 @@
 <h2 id="entities">Entities の確認</h2>
 <p>続いて、ASMが発見した Entities (=外部露出しているデジタル・リソース）を確認します。</p>
 <p>１．画面上部の<code>Entities</code> タブをクリックすると、下記画面が表示されます。</p>
-<p>２．左ペインのFiltersを選択することで、表示するEntitiesをフィルタすることができます。<strong>DNSRecordを</strong>を選択して、</p>
-<p>３．左ペインのFiltersを、DNSRecordの選択を解除し、URIを選択します。</p>
-<p>４．URI の１つをクリックして、詳細を確認します。</p>
-<p>スクリーンショットや</p>
-<p>５．ASMはそのほかにも、攻撃者の興味をひきやすいリソースについても探索を行います。AWS S3バケットや GitHubの</p>
-<p>もしあれば、</p>
+<p><img alt="" src="../images/2022-08-10-00-23-15-image.png" /></p>
+<p>２．左ペインのFiltersを選択することで、表示するEntitiesをフィルタすることができます。<strong>DNSRecord</strong> を選択して、DNSレコードのみを表示します。自組織のドメインに関連するDNSレコードが表示されていることを確認してください。</p>
+<p><img alt="" src="../images/2022-08-10-00-24-17-image.png" /></p>
+<p>３．左ペインのFiltersから、DNSRecordの選択を解除し、<strong>URI</strong> を選択します。自組織のドメインに関連するWebサイトのURLが表示されていることを確認してください。</p>
+<p><img alt="" src="../images/2022-08-10-00-30-35-image.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Filters で新しく条件を設定する時は、すでに選択している Filter をクリックし解除するのを忘れないでください。</p>
+</div>
+<p>４．URI の１つをクリックして詳細を確認します。探索で発見した時期の情報、このWebサイトについての応答コードやレスポンスの内容が確認できます。</p>
+<p><img alt="" src="../images/2022-08-10-00-35-18-image.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Technologes タブで、この Entity に関連するTechnoloiesを確認できます(cpe形式) 。 またChecksタブでは、この Entity に対して実施した脆弱性チェックも確認できます。</p>
+</div>
+<p>５．画面右側では、このEntityに関連する Issues や探索の状況が確認できます。</p>
+<p><img alt="" src="../images/2022-08-10-00-44-07-image.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>無償体験版ではスクリーンショット機能は無効化されています。</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>ASMは、Seedで入力した情報をもとに探索を行っています。具体的には、ドメイン情報からDNSレコードの調査や、Webサイトの探索といった単純なものに加え、OSINTベースによる探索や、機械学習を用いた情報の紐づけなど、様々なロジックを用いています。探索の状況(Discovery Tasks)で表示されているのはその一部分です。</p>
 </div>
-<p>ASMは、Seedで入力した情報をもとに探索を行っています。
-ここでは、ドメイン情報からDNSレコードの調査や、Webサイトの探索といった単純なものに加え、OSINTベースによる探索や、機械学習を用いた情報の紐づけなど、様々なロジックを用いて探索をおこなっています。。</p>
-<p>６．画面右上のクエリウィンドウから、より詳細の検索を行うことができます</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<p>６．画面左上の ← Entities をクリックし、前の画面に戻ります。 
+ASMはそのほかにも、攻撃者にとって興味の対象となるリソースについても探索を行っています。画面左の Filters の数字を確認し、 AWS S3バケットや GitHub などの Entities があれば内容を確認してみてください。 </p>
+<p><img alt="" src="../images/2022-08-10-00-49-04-image.png" /></p>
+<p>６．画面右上の検索ウィンドウから、より詳細の検索を行うことができます。<br />
+ここでは検索ウィンドウに<code>vuln = cve</code>のクエリを入力し、脆弱性があると推定される Entities を検索してみます。</p>
+<p><img alt="" src="../images/2022-08-10-01-05-09-image.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>検索ウィンドウは様々なクエリが実行できます。クエリの詳細は <a href="https://docs.mandiant.com/home/attack-surface-management-search-syntax">ユーザガイド</a> でまとめられています。</p>
 </div>
-<p>画面上部の Active Entities/ InActive Entities を変更することで、過去に発見したEntities を確認できます。InActive Entieysは「以前の探索で発見されたが、最新の探索では発見されなかった」ものとして</p>
-<p>７．最後に、Domain をみます。</p>
-<p>→</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-</div>
-<p>タイポ・スクワッティング(Typo-Squatting)攻撃の可能性があるドメインが表示されます。URLの打ち間違えを狙ったドメインとして</p>
-<p><em>Typo</em>-Squatting（タイポ・スクワッティング）</p>
-<p>タイポすくわってぃんぐの 
-画面上部の Active Entities/ InActive Entities を変更することで、過去に発見したEntities を確認できます。InActive Entieysは「以前の探索で発見されたが、最新の探索では発見さ</p>
-<p><img alt="" src="../images/2022-08-08-13-54-07-image.png" /></p>
-<p>AWS のS3バケットや、Github関連のEntitiesなど、</p>
-<p>タスクの完了は、Status が Finished になっていることで確認できます。その他にも、開始時間や探索時間、探索試行数などが確認できます</p>
-<p>探索によって発見した Issue、Entity、Technologyの数を確認します。</p>
-<p>３．Hosts by Country で、どの国でEntitiesが発見されているか、国ごとのHosts数を確認します。</p>
-<p>４．New Technologiesで、</p>
-<p>８．次のステップで、Technologies について確認していきます。</p>
+<p>７．最後に、Domain を確認します。左ペインのFiltersから <strong>Domain</strong> を選択し、特定のドメインを１つクリックして詳細を表示します。</p>
+<p><img alt="" src="../images/2022-08-10-01-12-18-image.png" /></p>
+<p>８．<strong>Potential Typosquats</strong> タブをクリックします。このドメインについてタイポ・スクワッティング(Typo-Squatting)攻撃の可能性があるドメインが表示されます。</p>
+<p><img alt="" src="../images/2022-08-10-01-13-40-image.png" /></p>
+<p>９．Entitiesの確認は以上です。次のステップで Technologies について確認していきます。</p>
 
               
             </article>
