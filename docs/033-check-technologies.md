@@ -6,52 +6,22 @@
 
 １．画面上部の`Technologies` タブをクリックすると、下記画面が表示されます。
 
-２．左ペインのFiltersを選択することで、表示するTechnologies をフィルタすることができます。**DNSRecordを**を選択して、
+![](images/2022-08-10-11-29-23-image.png)
 
-３．左ペインのFiltersを、DNSRecordの選択を解除し、URIを選択します。
+２．左ペインのFiltersを選択することで、表示するTechnologies をフィルタすることができます。**web_server**を選択して、Webアプリケーションに関連するテクノロジーを確認します。
 
-４．URI の１つをクリックして、詳細を確認します。
+![](images/2022-08-10-11-25-51-image.png)
 
-スクリーンショットや
+３．Technologyを１つクリックすると、そのテクノロジーが利用さているEntitiesが確認できます。
 
-　
+![](images/2022-08-10-11-30-11-image.png)
 
-５．ASMはそのほかにも、攻撃者の興味をひきやすいリソースについても探索を行います。AWS S3バケットや GitHubの
+４．Technologies 画面にもどり、左ペインのFiltersから、iaas を選択します。自組織で利用禁止になっているクラウドサービス等がないか、セキュリティポリシーと照らし合わせて確認してください。
 
-もしあれば、
+![](images/2022-08-10-11-30-43-image.png)
 
-!!! note
- ASMは、Seedで入力した情報をもとに探索を行っています。
-ここでは、ドメイン情報からDNSレコードの調査や、Webサイトの探索といった単純なものに加え、OSINTベースによる探索や、機械学習を用いた情報の紐づけなど、様々なロジックを用いて探索をおこなっています。。
+５．左ペインのFiltersの下にある、Vendors の項目ではベンダー視点での確認ができます。各項目の数字を確認し、SaaSサービスやロードバランサーのベンダーなどの Technologies があれば内容を確認してみてください。
 
-６．画面右上のクエリウィンドウから、より詳細の検索を行うことができます
+![](images/2022-08-10-11-31-19-image.png)
 
-!!! note
- 画面上部の Active Entities/ InActive Entities を変更することで、過去に発見したEntities を確認できます。InActive Entieysは「以前の探索で発見されたが、最新の探索では発見されなかった」ものとして
-
-７．最後に、Domain をみます。
-
-→
-
-!!! note
-　タイポ・スクワッティング(Typo-Squatting)攻撃の可能性があるドメインが表示されます。URLの打ち間違えを狙ったドメインとして
-
-　
-*Typo*-Squatting（タイポ・スクワッティング）
-
-タイポすくわってぃんぐの 
-画面上部の Active Entities/ InActive Entities を変更することで、過去に発見したEntities を確認できます。InActive Entieysは「以前の探索で発見されたが、最新の探索では発見さ
-
-![](images/2022-08-08-13-54-07-image.png)
-
-AWS のS3バケットや、Github関連のEntitiesなど、
-
-タスクの完了は、Status が Finished になっていることで確認できます。その他にも、開始時間や探索時間、探索試行数などが確認できます
-
-探索によって発見した Issue、Entity、Technologyの数を確認します。
-
-３．Hosts by Country で、どの国でEntitiesが発見されているか、国ごとのHosts数を確認します。
-
-４．New Technologiesで、
-
-８．次のステップで、Technologies について確認していきます。
+６．Technologies の確認は以上です。次のステップで Issues について確認していきます。

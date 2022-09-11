@@ -1,4 +1,4 @@
-# 5. まとめ
+# 5. まとめ・自由時間
 
 ## ハンズオンのまとめ
 
@@ -45,6 +45,20 @@
 ![](images/2022-08-09-23-37-41-image.png)
 
 ![](images/2022-08-09-23-38-10-image.png)
+
+## 
+
+## ## 自由時間
+
+---
+
+ハンズオンはこれで終了ですが、時間に余裕がある場合は、ステップ３で見つけた気になる Entity や Issue の詳細を確認を行ってみてください。
+
+!!! Info
+ 発見したEntityをより調査するには下記のサイト等を利用します。
+IPアドレスの確認： [https://db-ip.com/](https://db-ip.com/)
+JPRS Whois : [https://whois.jprs.jp/](https://whois.jprs.jp/)
+特定サイトの調査: [https://urlscan.io/](https://urlscan.io)
 
 ## クリーンアップ
 
