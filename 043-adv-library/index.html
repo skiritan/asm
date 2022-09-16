@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4-tips" class="md-skip">
+        <a href="#4" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -517,17 +517,20 @@
                 
 
 
-<h1 id="4-tips">4. 運用のTIPS</h1>
+<h1 id="4">4. 応用編</h1>
 <h2 id="library">Libraryの確認</h2>
-<p>ASMが行う探索やリスク特定処理は、Libraryとして一部を確認することができます。
-どのような仕組みで探索が行われているか、どのような脆弱性が判定できるかなどを、確認します。</p>
-<p>ここでは、探索で発見したアタックサーフェースの数や、時系列の変化や地理的な分布、最新の探索で発見した情報などが表示されます。</p>
+<p>ASMが行う探索やリスク判定処理は、Library画面で確認することができます。<br />
+ここでは、判定する脆弱性のリストや探索を行う仕組みなどを確認します。</p>
 <p>１．画面上部右側のプロジェクトタブから、<code>Library</code>をクリックします。</p>
-<p>２．探索によって発見した Issue、Entity、Technologyの数を確認します。</p>
-<p>３．Hosts by Country で、どの国でEntitiesが発見されているか、国ごとのHosts数を確認します。</p>
-<p>４．New Technologiesで、</p>
-<p>５．Recent Issues でどのようなリスクが発見されているかを確認します。</p>
-<p>６．以上で、アタックサーフェースの状況をダッシュボードで確認しました。次のステップからEntites、Technologies、Issueについて個別に確認していきます。</p>
+<p><img alt="" src="../images/2022-09-16-12-03-58-image.png" /></p>
+<p>２．左ペインの <code>Issue Definitions</code> をクリックすると、ASMが検査するIssueのリストが確認できます。重大度や検索ウィンドウでフィルタや検索が可能です。適当な脆弱性やキーワードをいれて対応状況を確認してください。
+<img alt="" src="../images/2022-09-16-12-06-26-image.png" /></p>
+<p>３．左ペインの <code>Technology Definitions</code> をクリックすると、ASMが判定するTechnologyのリストが確認できます。カテゴリやベンダーでのフィルタや検索ウィンドウで利用可能です。自組織で利用中のセキュリティ製品名などがあるか確認してみてください。</p>
+<p><img alt="" src="../images/2022-09-16-12-08-52-image.png" /></p>
+<p>３．左ペインの <code>Task Definitions</code> をクリックすると、Task Type で <code>Discovery</code> を選択すると、Entity探索処理のタスクが確認できます。処理の詳細は非公開のため確認できませんが、どのような内容で探索を行っているかを簡単に確認してください。<img alt="" src="../images/2022-09-16-12-14-33-image.png" /></p>
+<p>４．この Discovery Taskは、Entitieの各ページでも表示されています。ASMがどのようなDiscovery Taskを実施し、資産を発見したかを確認できます。</p>
+<p><img alt="" src="../images/2022-09-16-12-18-22-image.png" /></p>
+<p>５．Libraryの確認は以上です。次のステップへ進んでください。</p>
 
               
             </article>
