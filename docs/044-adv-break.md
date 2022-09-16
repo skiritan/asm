@@ -1,21 +1,13 @@
-# 4. 運用のTIPS
+# 4. 応用編
 
-このステップでは、ASMが行った探索の結果を確認します。
+## 自由時間
 
-## Tag機能
+---
 
-まずDashBoardで結果の概要を確認していきます。
+ハンズオンはこれで終了です。 
 
-ここでは、探索で発見したアタックサーフェースの数や、時系列の変化や地理的な分布、最新の探索で発見した情報などが表示されます。
+時間に余裕がある場合は、ステップ３で見つけた気になる Entity や Issue の確認や、どのようにASMがEntityを発見したかの確認などを行ってみてください。
 
-１．画面上部の`Dashboad` タブをクリックすると、下記画面が表示されます
-
-２．探索によって発見した Issue、Entity、Technologyの数を確認します。
-
-３．Hosts by Country で、どの国でEntitiesが発見されているか、国ごとのHosts数を確認します。
-
-４．New Technologiesで、
-
-５．Recent Issues でどのようなリスクが発見されているかを確認します。
-
-６．以上で、アタックサーフェースの状況をダッシュボードで確認しました。次のステップからEntites、Technologies、Issueについて個別に確認していきます。
+!!! Info
+    発見したEntityをより調査するには下記のサイト等を利用します。  
+    IPアドレスの確認： [https://db-ip.com/](https://db-ip.com/)     JPRS Whois : [https://whois.jprs.jp/](https://whois.jprs.jp/)    特定サイトの調査: [https://urlscan.io/](https://urlscan.io/)
