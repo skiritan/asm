@@ -25,9 +25,6 @@ ASMで発見した情報 (Entities, Technologies, Issue) はCSVやJSONファイ�
 ![](images/2022-09-09-15-55-51-image.png)
 
 !!! TIPS
-    フル機能版では、脆弱性リストや証明書リストなど、エクスポートできる種類が追加で用意されています。（Collections Setteingより出力可能）
-
-!!! TIPS
     ASMのAPIを利用することで同様の情報をプログラムから取得し、自動的な処理を行うことも可能です。
 
 ６．Export 機能の確認は以上です。次のステップに進んでください。
