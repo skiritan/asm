@@ -35,17 +35,17 @@ nav:
   - '2. 設定の確認': '02-configuration-check.md'
   - '3. 探索結果の確認': 
     - '3.1. DashBoardの確認': '031-check-dashboard.md'
-    - '3.2. Entitiesの確認': '032-check-entities.md'
-    - '3.3. Technologiesの確認': '033-check-technologies.md'
-    - '3.4. Issuesの確認': '034-check-issues.md'
-    - '3.5. Insightsの確認': '035-check-insights.md'
-
-  - '4. 応用編': 
-    - '4.1. Export機能': '041-adv-export.md'
-    - '4.2. 運用機能': '042-adv-operation.md'
-    - '4.3. Library': '043-adv-library.md'
-    - '4.4. 自由時間': '044-adv-break.md'
-  
-  - '5. まとめ': '05-summary.md'
+    - '3.2. Entitiesの確認1': '032-check-entities1.md'
+    - '3.3. Entitiesの確認2': '033-check-entities2.md'
+    - '3.4. Technologiesの確認': '033-check-technologies.md'
+    - '3.5. Issuesの確認': '034-check-issues.md'
+    - '3.6. Insightsの確認': '035-check-insights.md'
+  - '4. 自組織の状況確認': '04-check-ownproject.md'
+  - '5. 応用編': 
+    - '5.1. Export機能': '051-adv-export.md'
+    - '5.2. 運用機能': '052-adv-operation.md'
+    - '5.3. Library': '053-adv-library.md'
+    - '5.4. 自由時間': '054-adv-break.md'
+  - '6. まとめ': '06-summary.md'
 
 

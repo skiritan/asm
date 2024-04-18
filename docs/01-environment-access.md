@@ -11,7 +11,7 @@
 ２．事前作成したアカウントでログインします
 
 !!! Info
-    このハンズオンは無償版アカウントの事前作成が必要です。アカウントを作成してない場合は [Mandiant Advantage 無償版登録ガイド]( https://www.mandiant.com/media/17411)  を参考に作成してください（登録内容の審査・確認に数日かかります）
+    このハンズオンは Mandiant Advantage アカウントが必要です。アカウントを作成してない場合は 、ハンズオン環境から事前に送信された招待メールを確認し、[登録ガイド](  https://seminar.mndt.work/ASM_Seminar_AccountGuide_202404.pdf) を参考に作成してください。（作成後、講師にお知らせください）
 
 ３．ログインが成功すると下記画面が表示されます
 
@@ -21,11 +21,12 @@
 
 ----
 
-４．画面左上のスイッチャーをクリックし、`Attack Surface Management` をクリックします
+４．画面左上のスイッチャーをクリックし、**Attack Surface Management** をクリックします
+
 ![](images/2022-08-04-15-51-13-image.png)
 
 ５．画面左上の表示が Attack Surface Management となり、ASM画面に移動していることを確認します
 
-![](images/2022-08-04-15-51-33-image.png)
+![image-20240418104431821](images/image-20240418104431821.png)
 
 ６．このステップは終了です。[次のステップ](../02-configuration-check) に移動します
