@@ -11,17 +11,17 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../04-check-ownproject/">
       
       
-        <link rel="next" href="../02-configuration-check/">
+        <link rel="next" href="../052-adv-operation/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>1. ASMへのアクセス - ASM ハンズオンセミナー</title>
+        <title>5.1. Export機能 - ASM ハンズオンセミナー</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-asm" class="md-skip">
+        <a href="#4" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. ASMへのアクセス
+              5.1. Export機能
             
           </span>
         </div>
@@ -197,59 +197,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          1. ASMへのアクセス
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01-environment-access/" class="md-nav__link">
         1. ASMへのアクセス
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mandiant-advantage" class="md-nav__link">
-    Mandiant Advantage ポータルへの接続
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-surface-management" class="md-nav__link">
-    Attack Surface Management への移動
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -409,14 +361,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
       
       
       
@@ -425,7 +379,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           5. 応用編
@@ -436,11 +390,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../051-adv-export/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          5.1. Export機能
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         5.1. Export機能
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#export" class="md-nav__link">
+    Export 機能
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,15 +531,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mandiant-advantage" class="md-nav__link">
-    Mandiant Advantage ポータルへの接続
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-surface-management" class="md-nav__link">
-    Attack Surface Management への移動
+  <a href="#export" class="md-nav__link">
+    Export 機能
   </a>
   
 </li>
@@ -564,25 +552,27 @@
                   
 
 
-<h1 id="1-asm">1. ASMへのアクセス</h1>
-<h2 id="mandiant-advantage">Mandiant Advantage ポータルへの接続</h2>
+<h1 id="4">4. 応用編</h1>
+<p>このステップでは応用編として、運用に役立つ機能、動作の仕組みを確認します。</p>
+<h2 id="export">Export 機能</h2>
 <hr />
-<p>１．ブラウザで  <a href="https://advantage.mandiant.com/">https://advantage.mandiant.com/</a> にアクセスします</p>
-<p><img alt="" src="../images/2022-08-04-15-18-26-image.png" /></p>
-<p>２．事前作成したアカウントでログインします</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>このハンズオンは Mandiant Advantage アカウントが必要です。アカウントを作成してない場合は 、ハンズオン環境から事前に送信された招待メールを確認し、<a href="https://seminar.mndt.work/ASM_Seminar_AccountGuide_202404.pdf">登録ガイド</a> を参考に作成してください。（作成後、講師にお知らせください）</p>
+<p>ASMで発見した情報 (Entities, Technologies, Issue) はCSVやJSONファイルとして出力することができます。</p>
+<p>１．画面上部の<code>Entities</code> タブをクリックすると、下記画面が表示されます。</p>
+<p>２．画面右上にある<code>Export</code> ボタンをクリックすると、画面右下に処理開始のメッセージが表示されます。</p>
+<p>３．画面上部右側のプロジェクトタブ<code>Entities</code> から、<code>Exports</code>をクリックします。</p>
+<p>４．ダウンロード可能なファイルが表示されます。一番上のある最新のExport結果の選択ボタンをクリックし、Download CSV をクリックすると、先ほどExport処理を行ったファイルをダウンロードできます。</p>
+<p><img alt="" src="../images/2022-09-09-15-46-52-image.png" /></p>
+<p>５．エクスポートしたファイルは下記のようになります。組織のIT管理(資産管理など)やセキュリティ対策（脆弱性診断など)へのインプットとして利用可能です。</p>
+<p><img alt="" src="../images/2022-09-09-15-55-51-image.png" /></p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>フル機能版では、脆弱性リストや証明書リストなど、エクスポートできる種類が追加で用意されています。（Collections Setteingより出力可能）</p>
 </div>
-<p>３．ログインが成功すると下記画面が表示されます</p>
-<p><img alt="" src="../images/2022-08-04-15-29-27-image.png" /></p>
-<h2 id="attack-surface-management">Attack Surface Management への移動</h2>
-<hr />
-<p>４．画面左上のスイッチャーをクリックし、<strong>Attack Surface Management</strong> をクリックします</p>
-<p><img alt="" src="../images/2022-08-04-15-51-13-image.png" /></p>
-<p>５．画面左上の表示が Attack Surface Management となり、ASM画面に移動していることを確認します</p>
-<p><img alt="image-20240418104431821" src="../images/image-20240418104431821.png" /></p>
-<p>６．このステップは終了です。<a href="../02-configuration-check">次のステップ</a> に移動します</p>
+<div class="admonition tips">
+<p class="admonition-title">Tips</p>
+<p>ASMのAPIを利用することで同様の情報をプログラムから取得し、自動的な処理を行うことも可能です。</p>
+</div>
+<p>６．Export 機能の確認は以上です。次のステップに進んでください。</p>
 
 
 

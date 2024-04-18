@@ -11,17 +11,17 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../035-check-insights/">
       
       
-        <link rel="next" href="../02-configuration-check/">
+        <link rel="next" href="../051-adv-export/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>1. ASMへのアクセス - ASM ハンズオンセミナー</title>
+        <title>4. 自組織の状況確認 - ASM ハンズオンセミナー</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-asm" class="md-skip">
+        <a href="#4" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. ASMへのアクセス
+              4. 自組織の状況確認
             
           </span>
         </div>
@@ -197,59 +197,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          1. ASMへのアクセス
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01-environment-access/" class="md-nav__link">
         1. ASMへのアクセス
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mandiant-advantage" class="md-nav__link">
-    Mandiant Advantage ポータルへの接続
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-surface-management" class="md-nav__link">
-    Attack Surface Management への移動
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -394,11 +346,52 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../04-check-ownproject/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          4. 自組織の状況確認
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         4. 自組織の状況確認
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,15 +529,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mandiant-advantage" class="md-nav__link">
-    Mandiant Advantage ポータルへの接続
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-surface-management" class="md-nav__link">
-    Attack Surface Management への移動
+  <a href="#_1" class="md-nav__link">
+    
   </a>
   
 </li>
@@ -564,25 +550,24 @@
                   
 
 
-<h1 id="1-asm">1. ASMへのアクセス</h1>
-<h2 id="mandiant-advantage">Mandiant Advantage ポータルへの接続</h2>
+<h1 id="4">4. 自組織の状態確認</h1>
+<h2 id="_1"></h2>
 <hr />
-<p>１．ブラウザで  <a href="https://advantage.mandiant.com/">https://advantage.mandiant.com/</a> にアクセスします</p>
-<p><img alt="" src="../images/2022-08-04-15-18-26-image.png" /></p>
-<p>２．事前作成したアカウントでログインします</p>
+<p>ASM の一般的な確認方法がわかったところで、自組織のアタックサーフェス検出状況を確認してみます。下記の手順に沿って実施してください。</p>
+<p>１．自組織のプロジェクトに移動します</p>
+<p>２．設定された Collection を確認します。<code>Standard Scan</code> が ドメイン名をもとにスキャンしたものです</p>
+<p>３．<code>Standard Scan</code> のコレクションを選択し、表示させる結果を固定します</p>
+<p>４．ダッシュボードを確認し、検出結果の概要を確認します</p>
+<p>５．ASM が検出した Entity や Technology、Issue の確認を行います。また、どのように ASM が Entity を発見したかの確認を行ってください。</p>
+<div class="admonition memo">
+<p class="admonition-title">Memo</p>
+<p>この結果は、１つのドメイン名だけでスキャンしたサンプル結果です。本番運用では、自組織の提供サービスやグループ会社などのドメイン名などを登録して運用するので、より多くのEntity や Issue を確認することができます。</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>このハンズオンは Mandiant Advantage アカウントが必要です。アカウントを作成してない場合は 、ハンズオン環境から事前に送信された招待メールを確認し、<a href="https://seminar.mndt.work/ASM_Seminar_AccountGuide_202404.pdf">登録ガイド</a> を参考に作成してください。（作成後、講師にお知らせください）</p>
+<p>発見したEntityをより調査するには下記のサイト等を利用します。<br />
+IPアドレスの確認： <a href="https://db-ip.com/">https://db-ip.com/</a>     JPRS Whois : <a href="https://whois.jprs.jp/">https://whois.jprs.jp/</a>    特定サイトの調査: <a href="https://urlscan.io/">https://urlscan.io/</a></p>
 </div>
-<p>３．ログインが成功すると下記画面が表示されます</p>
-<p><img alt="" src="../images/2022-08-04-15-29-27-image.png" /></p>
-<h2 id="attack-surface-management">Attack Surface Management への移動</h2>
-<hr />
-<p>４．画面左上のスイッチャーをクリックし、<strong>Attack Surface Management</strong> をクリックします</p>
-<p><img alt="" src="../images/2022-08-04-15-51-13-image.png" /></p>
-<p>５．画面左上の表示が Attack Surface Management となり、ASM画面に移動していることを確認します</p>
-<p><img alt="image-20240418104431821" src="../images/image-20240418104431821.png" /></p>
-<p>６．このステップは終了です。<a href="../02-configuration-check">次のステップ</a> に移動します</p>
 
 
 

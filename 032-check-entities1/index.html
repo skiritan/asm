@@ -11,17 +11,17 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../031-check-dashboard/">
       
       
-        <link rel="next" href="../02-configuration-check/">
+        <link rel="next" href="../033-check-entities2/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>1. ASMへのアクセス - ASM ハンズオンセミナー</title>
+        <title>3.2. Entitiesの確認1 - ASM ハンズオンセミナー</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-asm" class="md-skip">
+        <a href="#3" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              1. ASMへのアクセス
+              3.2. Entitiesの確認1
             
           </span>
         </div>
@@ -197,59 +197,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          1. ASMへのアクセス
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01-environment-access/" class="md-nav__link">
         1. ASMへのアクセス
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mandiant-advantage" class="md-nav__link">
-    Mandiant Advantage ポータルへの接続
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-surface-management" class="md-nav__link">
-    Attack Surface Management への移動
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -275,14 +227,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
       
       
       
@@ -291,7 +245,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           3. 探索結果の確認
@@ -316,11 +270,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../032-check-entities1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          3.2. Entitiesの確認1
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         3.2. Entitiesの確認1
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#entities-1" class="md-nav__link">
+    Entities の確認１
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -536,15 +531,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mandiant-advantage" class="md-nav__link">
-    Mandiant Advantage ポータルへの接続
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#attack-surface-management" class="md-nav__link">
-    Attack Surface Management への移動
+  <a href="#entities-1" class="md-nav__link">
+    Entities の確認１
   </a>
   
 </li>
@@ -564,25 +552,50 @@
                   
 
 
-<h1 id="1-asm">1. ASMへのアクセス</h1>
-<h2 id="mandiant-advantage">Mandiant Advantage ポータルへの接続</h2>
-<hr />
-<p>１．ブラウザで  <a href="https://advantage.mandiant.com/">https://advantage.mandiant.com/</a> にアクセスします</p>
-<p><img alt="" src="../images/2022-08-04-15-18-26-image.png" /></p>
-<p>２．事前作成したアカウントでログインします</p>
+<h1 id="3">3. 探索結果の確認</h1>
+<h2 id="entities-1">Entities の確認１</h2>
+<p>続いて、ASMが発見した Entities (= 外部露出している IT 資産）を確認します。</p>
+<p>１．画面上部の <strong>Entities</strong> タブをクリックすると、下記画面が表示されます。</p>
+<p><img alt="image-20240418111539824" src="../images/image-20240418111539824.png" /></p>
+<p>２．左ペインのFiltersを選択することで、表示する Entities をフィルタすることができます。試しに<strong>DNSRecord</strong> を選択して、DNSレコードのみを表示します。デモ環境のドメイン(acme.com)に関連するDNSレコードが確認できます。</p>
+<p><img alt="image-20240418111750387" src="../images/image-20240418111750387.png" /></p>
+<p>３．次に、デモ組織に関連する Web サイトを確認してみます。左ペインのFiltersから、<u>DNSRecord の選択を解除し</u>、<strong>URI</strong> を選択します。デモ組織に関連する Web サイトのURLが500件程度表示されます。</p>
+<p><img alt="image-20240418111917603" src="../images/image-20240418111917603.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Filters で新しく条件を設定する時は、すでに選択している Filter をクリックし解除するのを忘れないでください。</p>
+</div>
+<p>４．Webサイトの数が多いのでテーブルビューに表示を変更します。画面右上の <strong>Switch To Table View</strong> をクリックすると表示が切り替わり、名前(Name)のほかに Web ページのタイトル(Title)や HTTPレスポンスのコード(Code)なども確認できます。また、<strong>Name</strong> をクリックすることでソートができ、ドメインベースのURLをリスト上部に表示させることもできます。</p>
+<p><img alt="image-20240418112109476" src="../images/image-20240418112109476.png" /></p>
+<p>５．ここから、先ほどダッシュボードで確認した「ヨーロッパのIT資産」を確認していきます。<u>URIの選択を解除し</u>、画面右側の <code>Search Summary</code> を確認します。このサマリーペインでは Entityの種別や、リスク重大度、位置情報などの統計情報が確認できます。<code>LOCATION</code>の <strong>Show More</strong> をクリックし、<strong>Germany</strong> をクリックします。</p>
+<p><img alt="image-20240418112220551" src="../images/image-20240418112220551.png" /></p>
+<p>６．７つの Entity が表示されました。この IT 資産がドイツに存在しているようです。root.acme.com というWebサイトがあるので、<strong>hxxps://root.acme.com:443</strong>  の Entity をクリックして詳細を確認します。</p>
+<p><img alt="image-20240418112304728" src="../images/image-20240418112304728.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>WebサイトのEntity(URL)はドメインベースのURLから確認すると効率的です。これは、ドメインベースURLがサイトの内容を確認しやすい一方、IPアドレスベースのURLはCDN等によって動的に変化したもので、調査するとドメインベースURLと同一サイトであるケースが多いためです。</p>
+</div>
+<p>８．<code>Network Name</code> を確認すると ドイツの企業にホスティングされており、 Acme-profileというタイトル(Title)のサイトで、HTTPレスポンスコード(Code)200を返していることから現在稼働しているようです。</p>
+<p><img alt="image-20240418112517858" src="../images/image-20240418112517858.png" /></p>
+<p>９．また、画面右下のScreenShotをクリックすると、このWebサイトのページの画像も確認できます。</p>
+<p><img alt="image-20240418112555675" src="../images/image-20240418112555675.png" /></p>
+<p>１０．Webサーバのコンテンツの情報に加えて、その他の情報も確認していきます。<strong>Technologies</strong> タブを選択すると、このWebサイトが利用しているソフトウェアなどがcpe形式で表示されます。このサイトでは apacheとbootstrapなどが使われているようです。</p>
+<p><img alt="image-20240418112642010" src="../images/image-20240418112642010.png" /></p>
+<ol>
+<li>また<strong>Checks</strong> タブを選択すると、この Entity に対して実施したセキュリティチェックも確認できます。リンク切れのチェックといった簡単なものから、Heartbleed の脆弱性チェックまで行われています。</li>
+</ol>
+<p><img alt="image-20240418112656345" src="../images/image-20240418112656345.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>このハンズオンは Mandiant Advantage アカウントが必要です。アカウントを作成してない場合は 、ハンズオン環境から事前に送信された招待メールを確認し、<a href="https://seminar.mndt.work/ASM_Seminar_AccountGuide_202404.pdf">登録ガイド</a> を参考に作成してください。（作成後、講師にお知らせください）</p>
+<p>このセキュリティチェックで問題があった場合は Issue が作成されます。Issue が作成されなかった場合は、チェックの結果問題がなかったことを意味します。</p>
 </div>
-<p>３．ログインが成功すると下記画面が表示されます</p>
-<p><img alt="" src="../images/2022-08-04-15-29-27-image.png" /></p>
-<h2 id="attack-surface-management">Attack Surface Management への移動</h2>
-<hr />
-<p>４．画面左上のスイッチャーをクリックし、<strong>Attack Surface Management</strong> をクリックします</p>
-<p><img alt="" src="../images/2022-08-04-15-51-13-image.png" /></p>
-<p>５．画面左上の表示が Attack Surface Management となり、ASM画面に移動していることを確認します</p>
-<p><img alt="image-20240418104431821" src="../images/image-20240418104431821.png" /></p>
-<p>６．このステップは終了です。<a href="../02-configuration-check">次のステップ</a> に移動します</p>
+<ol>
+<li>
+<p>このサイトは把握しているサイトで、（リンク切れはあるものの）特にセキュリティ上のリスクはなので問題ないと判断しました。</p>
+<p><img alt="image-20240418113008622" src="../images/image-20240418113008622.png" /></p>
+</li>
+</ol>
+<p><a href="../033-check-entities2">次のステップ</a> で、Webサイト以外の Entitlesについて、もう少し確認していきます。</p>
 
 
 

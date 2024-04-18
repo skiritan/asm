@@ -17,7 +17,7 @@
         <link rel="next" href="../031-check-dashboard/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -25,10 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7bf56d0a.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
       
       
 
@@ -54,14 +51,11 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -331,8 +325,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../032-check-entities/" class="md-nav__link">
-        3.2. Entitiesの確認
+      <a href="../032-check-entities1/" class="md-nav__link">
+        3.2. Entitiesの確認1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../033-check-entities2/" class="md-nav__link">
+        3.3. Entitiesの確認2
       </a>
     </li>
   
@@ -346,7 +354,7 @@
   
     <li class="md-nav__item">
       <a href="../033-check-technologies/" class="md-nav__link">
-        3.3. Technologiesの確認
+        3.4. Technologiesの確認
       </a>
     </li>
   
@@ -360,7 +368,7 @@
   
     <li class="md-nav__item">
       <a href="../034-check-issues/" class="md-nav__link">
-        3.4. Issuesの確認
+        3.5. Issuesの確認
       </a>
     </li>
   
@@ -374,7 +382,7 @@
   
     <li class="md-nav__item">
       <a href="../035-check-insights/" class="md-nav__link">
-        3.5. Insightsの確認
+        3.6. Insightsの確認
       </a>
     </li>
   
@@ -383,6 +391,21 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-check-ownproject/" class="md-nav__link">
+        4. 自組織の状況確認
+      </a>
     </li>
   
 
@@ -400,19 +423,19 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
       
       
       
-        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-          4. 応用編
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          5. 応用編
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
-          4. 応用編
+          5. 応用編
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -422,8 +445,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../041-adv-export/" class="md-nav__link">
-        4.1. Export機能
+      <a href="../051-adv-export/" class="md-nav__link">
+        5.1. Export機能
       </a>
     </li>
   
@@ -436,8 +459,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../042-adv-operation/" class="md-nav__link">
-        4.2. 運用機能
+      <a href="../052-adv-operation/" class="md-nav__link">
+        5.2. 運用機能
       </a>
     </li>
   
@@ -450,8 +473,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../043-adv-library/" class="md-nav__link">
-        4.3. Library
+      <a href="../053-adv-library/" class="md-nav__link">
+        5.3. Library
       </a>
     </li>
   
@@ -464,8 +487,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../044-adv-break/" class="md-nav__link">
-        4.4. 自由時間
+      <a href="../054-adv-break/" class="md-nav__link">
+        5.4. 自由時間
       </a>
     </li>
   
@@ -486,8 +509,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-summary/" class="md-nav__link">
-        5. まとめ
+      <a href="../06-summary/" class="md-nav__link">
+        6. まとめ
       </a>
     </li>
   
@@ -556,54 +579,40 @@
 
 
 <h1 id="2">2. 設定の確認</h1>
-<p>このステップでは、事前に設定されている内容を確認します。</p>
+<p>このステップでは、ASM の設定方法を確認します</p>
 <h2 id="_1">プロジェクトの確認と移動</h2>
 <p>このハンズオンでは２つのプロジェクトが用意されています。</p>
 <ol>
 <li>
-<p>フリー評価用プロジェクト：登録いただいたメールアドレスの組織名に関連する名称</p>
+<p>デモ用プロジェクト：Workshop_Demo</p>
 </li>
 <li>
-<p>デモ用プロジェクト：SK-Workshop_Demo</p>
+<p>ワークショップ用プロジェクト：ws24xx-xxx (登録いただいたメールアドレスの組織名の先頭文字列）</p>
 </li>
 </ol>
-<p>画面右上のタブからプロジェクトの移動が可能です。まずフリー評価用プロジェクトを使ってLABを実施してください。</p>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>発見されたIT資産やリスクが少ない場合は、デモ用プロジェクトに移動して出力例を確認してください。</p>
-</div>
-<p>１．画面右上のプロジェクトタブを開きリストを確認します。その後、フリー評価用プロジェクト（自分の組織名に関連する名称のプロジェクト）をクリックします。</p>
-<p><img alt="" src="../images/2023-07-13-12-21-53-image.png" /></p>
+<p>画面右上のタブからプロジェクトの移動が可能です。まず、デモ用プロジェクトを使って ASM の一般的な設定方法を確認していきます。</p>
+<p>１．画面右上のプロジェクトタブを開きリストを確認します。その後、デモ用プロジェクト（<code>Workshop_Demo</code>）をクリックします。</p>
+<p><img alt="image-20240418104730196" src="../images/image-20240418104730196.png" /></p>
+<p><img alt="" src="images/2023-07-13-12-21-53-image.png" /></p>
 <h2 id="collection-seed">Collection / Seed の確認</h2>
-<p>プロジェクトには ASM がアタックサーフェースの探索を行うための設定があらかじめ行われています。探索の起点となる Collection の Seed 設定を確認します。</p>
-<p>２．画面上部の<code>Collections</code> タブから <code>Collection Settings</code> ボタンをクリックします。</p>
-<p><img alt="" src="../images/2022-08-04-15-58-06-image.png" /></p>
-<p>３．事前登録されたCollectionをクリックします。</p>
-<p><img alt="" src="../images/2022-08-04-16-02-06-image.png" /></p>
-<div class="admonition check">
-<p class="admonition-title">Check</p>
-<p>Collection の名前には、登録したメールアドレスのドメイン名（企業ドメイン名など）に関連した名称が設定されています。</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Collection の設定がない場合は主催者にお知らせください。Mandiant Advantage アカウント作成がセミナー開催間際になった場合、事前設定が行われていない場合があります。</p>
-</div>
-<p>４．<code>Configurations</code> タブの<code>Seed Entities</code>をクリックします。</p>
-<p><img alt="" src="../images/2023-07-13-11-49-00-image.png" /></p>
-<p>５．事前設定された Seed を確認します。</p>
-<p><img alt="" src="../images/2022-08-04-16-09-01-image.png" /></p>
+<p>このプロジェクトには ASM がアタックサーフェースの探索を行うための設定(Collection)があらかじめ作成されています。まず最初に、探索の起点となる設定(Seed) を確認します。</p>
+<p>２．画面上部の <strong>Collections</strong> タブから <strong>Settings</strong> ボタンをクリックします</p>
+<p><img alt="image-20240418105033836" src="../images/image-20240418105033836.png" /></p>
+<p>３．事前登録されたCollection (<code>Demo Collection</code>) の <strong>Settings</strong> をクリックします</p>
+<p><img alt="image-20240418105155430" src="../images/image-20240418105155430.png" /></p>
+<p>４．<code>Configurations</code> タブの <strong>Seed Entities </strong>をクリックします</p>
+<p><img alt="image-20240418105354775" src="../images/image-20240418105354775.png" /></p>
+<p>５．事前設定された Seed を確認します。ここでは組織のドメイン名(acme.com)と、組織が保有しているグローバルIPアドレスレンジが登録されていることがわかります。</p>
+<p><img alt="image-20240418105505785" src="../images/image-20240418105505785.png" /></p>
 <h2 id="_2">探索履歴の確認</h2>
-<p>ASM が行った探索の履歴を確認します。この探索には事前設定された Seed の情報が利用されています。</p>
-<p>６．<code>History</code> タブをクリックします。</p>
-<p><img alt="" src="../images/2022-08-04-16-03-41-image.png" /></p>
-<p>７．探索履歴が表示されます。
-少なくとも１つ以上の探索タスクが完了していることを確認します。</p>
-<p><img alt="" src="../images/2022-08-04-16-10-40-image.png" /></p>
+<p>ASM が行った探索の履歴を確認します。この探索には設定された Seed の情報が利用されています。</p>
+<p>６．<strong>History</strong> タブをクリックすると、探索履歴が表示されます。ここでは事前にスキャンが実施されて、探索が正常終了していることがわかります。</p>
+<p><img alt="image-20240418105744956" src="../images/image-20240418105744956.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>タスクの完了は、Status が Finished になっていることで確認できます。その他にも、開始時間や探索時間、探索試行数などが表示があることを確認してください。</p>
+<p>タスクの正常終了は、Status が Finished になっていることで確認できます。その他にも、開始時間や探索時間、探索試行数などが表示があることを確認してください。</p>
 </div>
-<p>８．このステップは終了です。<a href="../031-check-dashboard"><u>次のステップ</u></a> に移動します。</p>
+<p>７．このステップは終了です。<a href="../031-check-dashboard"><u>次のステップ</u></a> に移動します。</p>
 
 
 
@@ -641,10 +650,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.fc8c2696.min.js"></script>
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
