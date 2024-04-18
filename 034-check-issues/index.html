@@ -557,18 +557,17 @@
 <p>続いて、ASMが発見したIssues (=セキュリティ視点から見た場合にリスクがある問題点）を確認します。</p>
 <p>１．画面上部の<code>Issues</code> タブをクリックすると、下記画面が表示されます</p>
 <p><img alt="" src="../images/2022-08-10-11-58-11-image.png" /></p>
-<p>２．左ペインの Filters を選択することで、表示するIssues をフィルタすることができます。Severity にある重大度を上から確認して、<u>数が０以上で重大度が一番大きいもの</u>を選択してください。</p>
-<p><img alt="" src="../images/2022-08-10-11-44-18-image.png" /></p>
-<p>３．表示されたIssuesのうち１つをクリックして、詳細に移動します。</p>
-<p><img alt="" src="../images/2022-08-10-11-44-43-image.png" /></p>
-<p>４．Issueの詳細情報を確認します。ここでは外部露出したVPNサービスが確認されています。このようなサービスは攻撃者から狙われやすいため、自社で認識されているものかどうかを確認していきます。</p>
-<p><img alt="" src="../images/2022-08-10-11-45-15-image.png" /></p>
-<p>５．Proof タブをクリックすると、VPN機器と判断した根拠の情報が確認できます。</p>
-<p><img alt="" src="../images/2022-08-10-11-47-06-image.png" /></p>
-<p>６．Affected Entity にあるURLをクリックすると、このIssueが存在するEntitiesを確認できます。</p>
-<p><img alt="" src="../images/2022-08-10-11-48-23-image.png" /></p>
-<p><img alt="" src="../images/2022-08-10-11-48-58-image.png" /></p>
-<p>７．ここで少し時間をとって、どのようなIssueが発見されているか内容や種別を確認してみてください。</p>
+<p>２．左ペインの Filters を選択することで、表示するIssues をフィルタすることができます。デモ環境では３つのCritical Issue があるので、まず
+この問題点から見ていきます。</p>
+<p><img alt="image-20240418143816547" src="../images/image-20240418143816547.png" /></p>
+<p>３．このデモ環境では、WordPress の設定ミスと、Apache Tomcat の脆弱性が指摘されています。<strong>Apache Tomcat - Ghostcat(CVE-2020-1983)</strong> をクリックして詳細を確認します。</p>
+<p><img alt="image-20240418144252042" src="../images/image-20240418144252042.png" /></p>
+<p>４．詳細画面では、対象となる Entity の情報とともに、このIssueの説明や対応策、参照先が確認できます。ブラウザの翻訳機能を利用して、日本語で確認することも可能です。</p>
+<p><img alt="image-20240418144405310" src="../images/image-20240418144405310.png" /></p>
+<p><img alt="image-20240418144533122" src="../images/image-20240418144533122.png" /></p>
+<p>５．Proof タブをクリックすると、判断した根拠の情報が確認できます。</p>
+<p><img alt="image-20240418144609471" src="../images/image-20240418144609471.png" /></p>
+<p>６．ここで少し時間をとって、その他にどのようなIssueが発見されているか内容や種別を確認してみてください。</p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
 <p>ASM が発見するIssue は露出したサービスの他に、露出した管理画面などの設定不備、パッチ未適用による脆弱性、開発中のシステムの露出など、様々なものがあります。</p>
