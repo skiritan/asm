@@ -27,7 +27,7 @@
 
 
 
-３．画面上部にある `Total Issues`、`Total Entities` 、`Total Technologies` の表示から、探索によって発見したセキュリティ上の問題点 (Issue)、IT資産 (Entity)、テクノロジー(Technology) の数を確認します。デモ環境では60件以上の重大な問題点(`Most Sever Issues`)があるようです。
+３．画面上部にある `Total Issues`、`Total Entities` 、`Total Technologies` の表示から、探索によって発見したセキュリティ上の問題点 (Issue)、IT資産 (Entity)、テクノロジー(Technology) の数を確認します。デモ環境では約60件の重大な問題点(`Most Sever Issues`)があるようです。
 
 ![image-20240418110529210](images/image-20240418110529210.png)
 
@@ -40,14 +40,14 @@
 !!! check
     このデモ環境の組織はアメリカに本社があるため自然な結果ですが、ヨーロッパの資産はあとで確認することにします。
 
-５．`New Technologies`で、どのような テクノロジー が最近発見されたかを確認します。デモ環境では PHPや WordPress の他に、 Roundcube といったWebメールツールも識別されています。
+５．`New Technologies`で、どのような テクノロジー が最近発見されたかを確認します。デモ環境では PHPやOracle Java、WordPress といったWebメールツールが識別されています。
 
 ![image-20240418110802391](images/image-20240418110802391.png)
 
 
 
 !!! check
-    このデモ環境の組織では Roundcube  は許可されたツールではないので、あとで詳細を確認することにします。
+    このデモ環境の組織では許可されていない古いOpenSSLも検出されているようです。あとで詳細を確認することにします。
 
 ６．最後に`Most Recent Issues`  で、どのようなリスクが最近発見されたを確認します。〇の色はリスクの重大度を示しています。デモ環境では Critical (赤)や High (橙)の Issue が検出されています。
 
