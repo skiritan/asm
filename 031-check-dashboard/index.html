@@ -580,7 +580,7 @@
 <p>ダッシュボードで結果の概要を確認していきます。ここでは、探索で発見したアタックサーフェースの数や、時系列の変化や地理的な分布、最新の探索で発見した情報などが確認できます。</p>
 <p>２．画面上部の <strong>Dashboard</strong> タブをクリックすると、下記画面が表示されます。</p>
 <p><img alt="image-20240418110424233" src="../images/image-20240418110424233.png" /></p>
-<p>３．画面上部にある <code>Total Issues</code>、<code>Total Entities</code> 、<code>Total Technologies</code> の表示から、探索によって発見したセキュリティ上の問題点 (Issue)、IT資産 (Entity)、テクノロジー(Technology) の数を確認します。デモ環境では60件以上の重大な問題点(<code>Most Sever Issues</code>)があるようです。</p>
+<p>３．画面上部にある <code>Total Issues</code>、<code>Total Entities</code> 、<code>Total Technologies</code> の表示から、探索によって発見したセキュリティ上の問題点 (Issue)、IT資産 (Entity)、テクノロジー(Technology) の数を確認します。デモ環境では約60件の重大な問題点(<code>Most Sever Issues</code>)があるようです。</p>
 <p><img alt="image-20240418110529210" src="../images/image-20240418110529210.png" /></p>
 <p>４．画面下部にある <code>Hosts by Country</code> で、どの国でどの程度Entitiesが発見されているか確認します。デモ環境では IT 資産のほとんどが北米にありますが、カナダやヨーロッパでも検出されているようです。</p>
 <p><img alt="image-20240418110621585" src="../images/image-20240418110621585.png" /></p>
@@ -588,11 +588,11 @@
 <p class="admonition-title">Check</p>
 <p>このデモ環境の組織はアメリカに本社があるため自然な結果ですが、ヨーロッパの資産はあとで確認することにします。</p>
 </div>
-<p>５．<code>New Technologies</code>で、どのような テクノロジー が最近発見されたかを確認します。デモ環境では PHPや WordPress の他に、 Roundcube といったWebメールツールも識別されています。</p>
+<p>５．<code>New Technologies</code>で、どのような テクノロジー が最近発見されたかを確認します。デモ環境では PHPやOracle Java、WordPress といったWebメールツールが識別されています。</p>
 <p><img alt="image-20240418110802391" src="../images/image-20240418110802391.png" /></p>
 <div class="admonition check">
 <p class="admonition-title">Check</p>
-<p>このデモ環境の組織では Roundcube  は許可されたツールではないので、あとで詳細を確認することにします。</p>
+<p>このデモ環境の組織では許可されていない古いOpenSSLも検出されているようです。あとで詳細を確認することにします。</p>
 </div>
 <p>６．最後に<code>Most Recent Issues</code>  で、どのようなリスクが最近発見されたを確認します。〇の色はリスクの重大度を示しています。デモ環境では Critical (赤)や High (橙)の Issue が検出されています。</p>
 <p><img alt="image-20240418111333034" src="../images/image-20240418111333034.png" /></p>
